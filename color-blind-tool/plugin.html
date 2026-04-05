@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin | VisionX</title>
+    <meta name="description" content="VisionX Design Plugin for Figma and Sketch.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><ion-icon name="eye"></ion-icon> VisionX</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="tool.html">Tool</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="plugin.html" class="active">Plugin</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="plugin-hero">
+            <div class="plugin-text">
+                <div class="hero-badge">Figma &amp; Sketch</div>
+                <h2>Design with empathy, natively.</h2>
+                <p>The VisionX Plugin integrates directly into your design workflow, letting you test interfaces for visual impairments without ever leaving your canvas.</p>
+
+                <ul class="plugin-features">
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Real-time simulation on selected artboards</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> WCAG 2.1 contrast checker across all layers</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Layer-based automated scanning for issues</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Accessible color palette replacement suggestions</li>
+                </ul>
+
+                <div class="install-steps">
+                    <h3>Installation Steps</h3>
+                    <ol>
+                        <li>Click Download Plugin below to get the .zip archive.</li>
+                        <li>Open Figma or Sketch Desktop App.</li>
+                        <li>Navigate to Plugins → Manage Plugins → Add new plugin.</li>
+                        <li>Select the unzipped VisionX plugin directory.</li>
+                    </ol>
+                </div>
+
+                <button class="btn btn-primary" onclick="alert('Downloading VisionX-Plugin-v2.0.4.zip…')">
+                    Download Plugin <ion-icon name="download-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="plugin-visual glass-card">
+                <img src="assets/images/plugin.png" alt="VisionX Plugin UI" class="plugin-banner">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <span>VisionX</span> by ATA IT Solutions. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

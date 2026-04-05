@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Tool | VisionX</title>
+    <meta name="description" content="Simulate color blindness on any image. Upload, process, compare, and download.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <ion-icon name="eye"></ion-icon> VisionX
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="tool.html" class="active">Tool</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="plugin.html">Plugin</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+    </nav>
+
+    <main class="page-content tool-container">
+        <div class="tool-layout">
+
+            <!-- ── Sidebar ── -->
+            <aside class="tool-sidebar glass-card">
+                <h2>Controls</h2>
+
+                <div class="control-group">
+                    <label>Upload Image</label>
+                    <div class="upload-area" id="uploadArea">
+                        <input type="file" id="imageInput" accept="image/*" hidden>
+                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                        <p>Drag & Drop or <span>Browse</span></p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>Simulation Mode</label>
+                    <div class="mode-buttons">
+                        <button class="mode-btn active" data-mode="normal">Normal</button>
+                        <button class="mode-btn" data-mode="protanopia">Protanopia</button>
+                        <button class="mode-btn" data-mode="deuteranopia">Deuteranopia</button>
+                        <button class="mode-btn" data-mode="tritanopia">Tritanopia</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="slider-header">
+                        <label>Intensity</label>
+                        <span id="intensityValue">100%</span>
+                    </div>
+                    <input type="range" id="intensitySlider" class="custom-slider" min="0" max="100" value="100">
+                </div>
+
+                <div class="actions">
+                    <button id="toggleCompareBtn" class="btn btn-outline">
+                        <ion-icon name="swap-horizontal-outline"></ion-icon> Hold: Before/After
+                    </button>
+                    <button id="downloadBtn" class="btn btn-primary">
+                        <ion-icon name="download-outline"></ion-icon> Download PNG
+                    </button>
+                    <button id="resetBtn" class="btn btn-danger">
+                        <ion-icon name="refresh-outline"></ion-icon> Reset
+                    </button>
+                </div>
+            </aside>
+
+            <!-- ── Workbench ── -->
+            <section class="tool-workbench">
+                <div class="canvas-container" id="canvasContainer">
+                    <canvas id="mainCanvas"></canvas>
+                    <div class="loading-overlay" id="loadingOverlay">
+                        <div class="spinner"></div>
+                        <p>Processing pixels…</p>
+                    </div>
+                    <div class="compare-badge" id="compareBadge" style="display:none;">Original View</div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/tool.js"></script>
+</body>
+</html>

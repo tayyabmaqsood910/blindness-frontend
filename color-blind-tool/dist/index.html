@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionX | Color Blind Accessibility Tool</title>
+    <meta name="description" content="Design for Everyone – Simulate color blindness, check contrast, and build accessible products.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <ion-icon name="eye"></ion-icon> VisionX
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="tool.html">Tool</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="plugin.html">Plugin</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+    </nav>
+
+    <main class="page-content home-hero">
+
+        <!-- ════════════════════════════════════════
+             HERO
+        ════════════════════════════════════════ -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Now Available — v2.0</div>
+                <h1 class="hero-title">Design for <span>Everyone</span></h1>
+                <p class="hero-subtitle">Simulate color blindness in real-time, verify WCAG contrast ratios, and ship truly inclusive products — all in your browser, zero dependencies.</p>
+                <div class="hero-cta">
+                    <a href="tool.html" class="btn btn-primary">Try the Tool <ion-icon name="color-wand-outline"></ion-icon></a>
+                    <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+                </div>
+                <!-- Trust row -->
+                <div class="hero-trust">
+                    <span class="trust-item"><ion-icon name="checkmark-circle"></ion-icon> No signup required</span>
+                    <span class="trust-item"><ion-icon name="checkmark-circle"></ion-icon> 100% client-side</span>
+                    <span class="trust-item"><ion-icon name="checkmark-circle"></ion-icon> WCAG 2.1 compliant</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card mockup-card">
+                    <img src="assets/images/sample.png" alt="Color Blindness Simulation Preview" class="mockup-img">
+                    <div class="mockup-overlay">
+                        <span class="overlay-badge">Protanopia Simulated</span>
+                    </div>
+                    <!-- Floating pills -->
+                    <div class="float-pill pill-1"><ion-icon name="eye-outline"></ion-icon> Protanopia</div>
+                    <div class="float-pill pill-2"><ion-icon name="color-palette-outline"></ion-icon> 8px precision</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ════════════════════════════════════════
+             STATS ROW
+        ════════════════════════════════════════ -->
+        <section class="stats-row">
+            <div class="stat-item">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Color blindness modes</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Client-side processing</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num">WCAG</span>
+                <span class="stat-label">2.1 AA / AAA ready</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num">0ms</span>
+                <span class="stat-label">Server latency</span>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             FEATURES
+        ════════════════════════════════════════ -->
+        <section class="features-section">
+            <p class="features-label">What VisionX Offers</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><ion-icon name="color-palette-outline"></ion-icon></div>
+                    <h3>Color Simulation</h3>
+                    <p>Simulate Protanopia, Deuteranopia, and Tritanopia using precise color transformation matrices applied pixel-by-pixel on the HTML5 Canvas.</p>
+                    <a href="tool.html" class="feature-link">Try it <ion-icon name="arrow-forward"></ion-icon></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><ion-icon name="contrast-outline"></ion-icon></div>
+                    <h3>Contrast Checker</h3>
+                    <p>Verify text and background combinations against WCAG 2.1 AA (4.5:1) and AAA (7:1) standards instantly — no additional tools needed.</p>
+                    <a href="tool.html" class="feature-link">Try it <ion-icon name="arrow-forward"></ion-icon></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><ion-icon name="bulb-outline"></ion-icon></div>
+                    <h3>Smart Suggestions</h3>
+                    <p>Receive automated color palette recommendations that are both visually stunning and comprehensively accessible for every type of user.</p>
+                    <a href="tool.html" class="feature-link">Explore <ion-icon name="arrow-forward"></ion-icon></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             HOW IT WORKS
+        ════════════════════════════════════════ -->
+        <section class="how-section">
+            <div class="section-title-block">
+                <p class="features-label">Simple Workflow</p>
+                <h2>How VisionX Works</h2>
+                <p class="section-sub">Three easy steps to make your designs fully accessible.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <div class="step-icon-wrap" style="--sc: 34,211,238;">
+                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                    </div>
+                    <h3>Upload Your Image</h3>
+                    <p>Drag and drop any image directly onto the tool. Supports PNG, JPG, WebP, and GIF formats.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <div class="step-icon-wrap" style="--sc: 168,85,247;">
+                        <ion-icon name="options-outline"></ion-icon>
+                    </div>
+                    <h3>Select a Simulation</h3>
+                    <p>Choose from Protanopia, Deuteranopia, or Tritanopia. Adjust the intensity slider for partial simulation.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <div class="step-icon-wrap" style="--sc: 236,72,153;">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </div>
+                    <h3>Compare & Download</h3>
+                    <p>Hold the Before/After button to compare, then download the processed image as a lossless PNG.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             COLOR BLINDNESS TYPES
+        ════════════════════════════════════════ -->
+        <section class="types-section">
+            <div class="section-title-block">
+                <p class="features-label">Supported Simulations</p>
+                <h2>Types of Color Blindness</h2>
+                <p class="section-sub">Understand what each simulation represents and who it affects.</p>
+            </div>
+
+            <div class="types-grid">
+                <div class="type-card" style="--tc: 239,68,68;">
+                    <div class="type-header">
+                        <div class="type-swatch">
+                            <span style="background:#ef4444;"></span>
+                            <span style="background:#78716c;"></span>
+                            <span style="background:#eab308;"></span>
+                        </div>
+                        <span class="type-badge" style="background:rgba(239,68,68,0.15); color:#f87171; border-color:rgba(239,68,68,0.3);">Protanopia</span>
+                    </div>
+                    <h4>Red-blind</h4>
+                    <p>Affects approximately 1% of males. Red and green hues are difficult to distinguish; reds appear much darker.</p>
+                    <div class="type-stat"><strong>~1%</strong> of males affected worldwide</div>
+                </div>
+
+                <div class="type-card" style="--tc: 34,197,94;">
+                    <div class="type-header">
+                        <div class="type-swatch">
+                            <span style="background:#78716c;"></span>
+                            <span style="background:#22c55e;"></span>
+                            <span style="background:#a16207;"></span>
+                        </div>
+                        <span class="type-badge" style="background:rgba(34,197,94,0.15); color:#86efac; border-color:rgba(34,197,94,0.3);">Deuteranopia</span>
+                    </div>
+                    <h4>Green-blind</h4>
+                    <p>The most common form, affecting around 6% of males. Green and red are confused; greens appear yellowish.</p>
+                    <div class="type-stat"><strong>~6%</strong> of males — most common form</div>
+                </div>
+
+                <div class="type-card" style="--tc: 59,130,246;">
+                    <div class="type-header">
+                        <div class="type-swatch">
+                            <span style="background:#3b82f6;"></span>
+                            <span style="background:#c4b5fd;"></span>
+                            <span style="background:#fde68a;"></span>
+                        </div>
+                        <span class="type-badge" style="background:rgba(59,130,246,0.15); color:#93c5fd; border-color:rgba(59,130,246,0.3);">Tritanopia</span>
+                    </div>
+                    <h4>Blue-blind</h4>
+                    <p>Rare, affecting less than 0.01% of people. Blue and yellow are indistinguishable; blues appear greenish.</p>
+                    <div class="type-stat"><strong>&lt;0.01%</strong> — rarest form</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             FAQ
+        ════════════════════════════════════════ -->
+        <section class="faq-section">
+            <div class="section-title-block">
+                <p class="features-label">Questions</p>
+                <h2>Frequently Asked</h2>
+            </div>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>Is my image uploaded to a server?</summary>
+                    <p>No — VisionX is 100% client-side. Your image is processed entirely in your browser using the HTML5 Canvas API. Nothing is ever uploaded or stored.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Which image formats are supported?</summary>
+                    <p>Any format your browser can render — PNG, JPEG, WebP, GIF (static), BMP, and SVG. For best results use PNG or WebP.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How accurate are the simulations?</summary>
+                    <p>VisionX uses the Brettel/Viénot/Mollon color transformation matrices, which are the industry standard for clinically accurate color blindness simulation.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use this for commercial projects?</summary>
+                    <p>Yes. VisionX is free to use in any project, commercial or personal. Attribution is appreciated but not required.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+             CTA BANNER
+        ════════════════════════════════════════ -->
+        <section class="cta-banner">
+            <div class="cta-inner glass-card">
+                <div class="cta-glow cta-glow-1"></div>
+                <div class="cta-glow cta-glow-2"></div>
+                <div class="cta-text">
+                    <h2>Start making your designs inclusive today.</h2>
+                    <p>Upload any image and see it through the eyes of a color blind user in seconds — no account, no install.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="tool.html" class="btn btn-primary">Open Tool <ion-icon name="color-wand-outline"></ion-icon></a>
+                    <a href="plugin.html" class="btn btn-outline">Get Plugin</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <span>VisionX</span> by ATA IT Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | VisionX</title>
+    <meta name="description" content="Explore our recent design and development projects.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><ion-icon name="eye"></ion-icon> VisionX</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="tool.html">Tool</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="plugin.html">Plugin</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <header class="section-header">
+            <h2>Our Works</h2>
+            <p>High-end software solutions and accessible UI experiences crafted with precision.</p>
+        </header>
+
+        <div class="portfolio-grid">
+            <article class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="assets/images/ev-link.png" alt="EV Link App">
+                </div>
+                <div class="project-info">
+                    <h3>EV Link App</h3>
+                    <p>A comprehensive mobile app to locate public EV charging stations, track stats, and handle billing with a neon-futuristic interface.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Mapbox API</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="assets/images/pos-billing.png" alt="Salon POS System">
+                </div>
+                <div class="project-info">
+                    <h3>Salon POS Application</h3>
+                    <p>Premium SaaS dashboard for salons featuring POS billing, inventory, appointment management, and actionable analytics reporting.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React JS</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">TailwindCSS</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="assets/images/plugin.png" alt="Color Blind Plugin">
+                </div>
+                <div class="project-info">
+                    <h3>VisionX Figma Plugin</h3>
+                    <p>A powerful design tool plugin for real-time color blindness simulation inside your design environment for rapid accessibility iteration.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Figma API</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Vanilla UI</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <span>VisionX</span> by ATA IT Solutions. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
